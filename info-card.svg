@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="330" viewBox="0 0 520 330">
+
+  <style>
+    text { font-family: "SFMono-Regular", Consolas, Menlo, monospace; }
+    .title { fill: #e6edf3; font-size: 17px; }
+    .key   { fill: #7dd3fc; font-size: 16px; }
+    .val   { fill: #c9d1d9; font-size: 16px; }
+    .cursor { fill: #7dd3fc; }
+    .ln { opacity: 0; animation: rise 0.38s ease-out forwards; }
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(6px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+  <rect width="520" height="330" fill="#0d1117" rx="14"/>
+  <rect x="0" y="0" width="520" height="46" fill="#111827" rx="14"/>
+  <rect x="0" y="24" width="520" height="22" fill="#111827"/>
+  <circle cx="18" cy="23" r="6" fill="#ff5f57"/>
+  <circle cx="38" cy="23" r="6" fill="#febc2e"/>
+  <circle cx="58" cy="23" r="6" fill="#28c840"/>
+  <text class="title" x="72" y="29">26bhaveshnp@github ~ $ whoami</text>
+  <g class="ln" style="animation-delay:0ms;">
+    <text class="key" x="26" y="76">user</text>
+    <text class="val" x="160" y="76">: 26bhaveshnp-sudo</text>
+  </g>
+  <g class="ln" style="animation-delay:100ms;">
+    <text class="key" x="26" y="122">now</text>
+    <text class="val" x="160" y="122">: Building &amp; learning in public</text>
+  </g>
+  <g class="ln" style="animation-delay:200ms;">
+    <text class="key" x="26" y="168">stack</text>
+    <text class="val" x="160" y="168">: Python • TypeScript • Linux • Git</text>
+  </g>
+  <g class="ln" style="animation-delay:300ms;">
+    <text class="key" x="26" y="214">interests</text>
+    <text class="val" x="160" y="214">: AI • automation • open source</text>
+  </g>
+  <g class="ln" style="animation-delay:400ms;">
+    <text class="key" x="26" y="260">contact</text>
+    <text class="val" x="160" y="260">: github.com/26bhaveshnp-sudo</text>
+  </g>
+</svg>
