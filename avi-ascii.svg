@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="612" height="526" viewBox="0 0 612 526">
+
+  <style>
+    text {
+      font-family: "SFMono-Regular", Consolas, Menlo, monospace;
+      font-size: 8px;
+      letter-spacing: 0.15px;
+      fill: #c9d9f0;
+    }
+    .ln { opacity: 0; animation: wipe 0.18s ease-out forwards; }
+    @keyframes wipe {
+      from { opacity: 0; clip-path: inset(0 100% 0 0); }
+      to   { opacity: 1; clip-path: inset(0 0% 0 0); }
+    }
+  </style>
+  <rect width="612" height="526" fill="#0d1117" rx="12"/>
+  <text class="ln" x="18" y="18" style="animation-delay:0ms;">                                                                                                </text>
+  <text class="ln" x="18" y="28" style="animation-delay:28ms;">                                                                                                </text>
+  <text class="ln" x="18" y="38" style="animation-delay:56ms;">                                                                                                </text>
+  <text class="ln" x="18" y="48" style="animation-delay:84ms;">                                                   ....     `-.                                 </text>
+  <text class="ln" x="18" y="58" style="animation-delay:112ms;">                                             .`--=++==*+--=*c*+...`=`                           </text>
+  <text class="ln" x="18" y="68" style="animation-delay:140ms;">                                       `:`:--===++++======+===++==*cc:                          </text>
+  <text class="ln" x="18" y="78" style="animation-delay:168ms;">                                     -+=++**--+****-=*+=-===*+==+*+=-+`                         </text>
+  <text class="ln" x="18" y="88" style="animation-delay:196ms;">                                   :*+=-+cs+=**css+=*c+=++=++=-=+**+--==-`:.                    </text>
+  <text class="ln" x="18" y="98" style="animation-delay:224ms;">                                  .*=-*=*c%*+c*#%s+s%scs#ccscc*+-:-=*sscc+=+                    </text>
+  <text class="ln" x="18" y="108" style="animation-delay:252ms;">                                  :=`:cc+c%s+c*s@#s%%s#%##%###sccc***s##c=+.                    </text>
+  <text class="ln" x="18" y="118" style="animation-delay:280ms;">                               .:=+==-=##s#%#ccc%@#%%s%%#%####%%%#c+=*cc*=+`                    </text>
+  <text class="ln" x="18" y="128" style="animation-delay:308ms;">                               +c*ss####%@%%@%###%%%%#%#ss*+==+++cs#sc*c#s+*                    </text>
+  <text class="ln" x="18" y="138" style="animation-delay:336ms;">                               *=*s##%%%%%s*+==---------`.      ...`*%###s++:                   </text>
+  <text class="ln" x="18" y="148" style="animation-delay:364ms;">                              -+-+cc%@@%#*=-::````````........   ....*%#%s-+=                   </text>
+  <text class="ln" x="18" y="158" style="animation-delay:392ms;">                              :+-c=c%@%#s*=-::```````````...      ....*s##=+                    </text>
+  <text class="ln" x="18" y="168" style="animation-delay:420ms;">                               *:=++#%%%c+=:````::::`````..`:::::``.. +%#**=                    </text>
+  <text class="ln" x="18" y="178" style="animation-delay:448ms;">                               :=:+*c%@#==+*css#####c:`````*###ssccc*:`%#++`                    </text>
+  <text class="ln" x="18" y="188" style="animation-delay:476ms;">                                +`=*c%%=.*%%#sccccccc=-:``:-=+++++++cs-*#=+                     </text>
+  <text class="ln" x="18" y="198" style="animation-delay:504ms;">                                =-:-*#+-*%s**ccccccssc+=--:+cc*****+=-=ccs+                     </text>
+  <text class="ln" x="18" y="208" style="animation-delay:532ms;">                                .+````*@@c==*c##c*c##%%##s##+*s%s*=**=:*#+=`                    </text>
+  <text class="ln" x="18" y="218" style="animation-delay:560ms;">                               .=*c+:s-=#+*s++#%@s+s#%#-`-%*`*s##*.=*+:-#`-*.                   </text>
+  <text class="ln" x="18" y="228" style="animation-delay:588ms;">                               +cs#%*s..c*=+=---=-=*s%*:. =%:`:--::-::`c*:-+:                   </text>
+  <text class="ln" x="18" y="238" style="animation-delay:616ms;">                               *cs##s*` =c=:`....`-*#s+:`. +s-.....`-+*===:-:                   </text>
+  <text class="ln" x="18" y="248" style="animation-delay:644ms;">                               =ccs#c*: `+c+=====+*cc**:`...`***++***=`.-``+.                   </text>
+  <text class="ln" x="18" y="258" style="animation-delay:672ms;">                               .*cc##c+..-*+++=---:+sc#s+--=: `-++=-::.::.=:                    </text>
+  <text class="ln" x="18" y="268" style="animation-delay:700ms;">                                 =cc##=-..+*-:-+**c#%%%%ss*+++++*cc=:`:=*=-                     </text>
+  <text class="ln" x="18" y="278" style="animation-delay:728ms;">                                  `=cs=-+==+`=##%%#ssc**=+=--:-*=+#*-=+*-.                      </text>
+  <text class="ln" x="18" y="288" style="animation-delay:756ms;">                                      -=-*cc+cc=+*c+=::``.....`. :c*sc++                        </text>
+  <text class="ln" x="18" y="298" style="animation-delay:784ms;">                                       =:+c###s*:-=++-:`....``. .=sss*c.                        </text>
+  <text class="ln" x="18" y="308" style="animation-delay:812ms;">                              .`:---===**-*s###sc=-=+*****+=`..`=csscc:                         </text>
+  <text class="ln" x="18" y="318" style="animation-delay:840ms;">                          .-=*s%%%@@@@@@@#-+c#%%#s+-`:+sss*-`.`=ccc*=.                          </text>
+  <text class="ln" x="18" y="328" style="animation-delay:868ms;">                         .+*+*%%%@@#scs###-=ccss##sc******++==+**=c+.                           </text>
+  <text class="ln" x="18" y="338" style="animation-delay:896ms;">                         ==*sc#%@%cc*+c%%#*c##sss#%%%%#sccccccc=.-%%#c+:                        </text>
+  <text class="ln" x="18" y="348" style="animation-delay:924ms;">                        -=-+csss#s#%%#s%@#s####s#ss##%%%##s*+=-` =s#%%%s*-                      </text>
+  <text class="ln" x="18" y="358" style="animation-delay:952ms;">                       .+-++*c##sss##%%##s########sssscc+=-:````.cc*c%@%sc+                     </text>
+  <text class="ln" x="18" y="368" style="animation-delay:980ms;">                       -===+*cs####sss###%#sss##sccccc*+-::::``.:#sccc%@#**-                    </text>
+  <text class="ln" x="18" y="378" style="animation-delay:1008ms;">                      -=-=+*cssss####ssss####ccc*+==++++=-::````=%#sscc%#c*+.                   </text>
+  <text class="ln" x="18" y="388" style="animation-delay:1036ms;">                    .+**cs###ssssssssssssccsssc*+==--===-:::````:+##scs%ss*==                   </text>
+  <text class="ln" x="18" y="398" style="animation-delay:1064ms;">                    :*css#%%%%%%##sscccsssccccss*=-::----:::```:-`=#ss%#sc+=+:.                 </text>
+  <text class="ln" x="18" y="408" style="animation-delay:1092ms;">                 .::===++**ccss#%%@%%##scccccccccc*=:``:---::`:::.:#s#sss***+++=-:`.            </text>
+  <text class="ln" x="18" y="418" style="animation-delay:1120ms;">             .:=+++++***cc****++*cs#%%@@%%#sscccssss*=:`..``......=##ssscccssscc**++=-`         </text>
+  <text class="ln" x="18" y="428" style="animation-delay:1148ms;">           `=+*ccsssscccccc***********cs#%%%%%%###sssss*+`  ...  `*scsssssssssssssssc**+`       </text>
+  <text class="ln" x="18" y="438" style="animation-delay:1176ms;">         .=+*csss#####sccccc********c***cccss##%%%%%%##--#*-   .=csc`*%#ssssss######ssc**-      </text>
+  <text class="ln" x="18" y="448" style="animation-delay:1204ms;">        :+*cs######ssssscccccc***c*cccccccccccccccs###@# +%#c-=c###%`:#sssssss#######sssc+=     </text>
+  <text class="ln" x="18" y="458" style="animation-delay:1232ms;">       -**s########sssssscccccccccccccccccsssccccccccs%@-`ssssssss#@=`sssssssss#s#####sss*++    </text>
+  <text class="ln" x="18" y="468" style="animation-delay:1260ms;">      -+*s########sssssss#scccccccssssssssssssscccccccs@* +sccccssc@*.cssssssss#sss#####sc+==   </text>
+  <text class="ln" x="18" y="478" style="animation-delay:1288ms;">     -+*s#%%%######sssssss#sssssssssssssssssssssssccccc#%`-sccccccc##.=sssssssssssss####ssc=+:  </text>
+  <text class="ln" x="18" y="488" style="animation-delay:1316ms;">    :++s#%%%%#######ssssss##sssssssssssssssssssssssccccc@=.ccccccccs%-`sssssssssssss######c*=+. </text>
+  <text class="ln" x="18" y="498" style="animation-delay:1344ms;">   .++c#%%%%###ss####s####s##########ssss###sssssscccccc%s.+sccccccc%*.cssssss##sssss######s*+- </text>
+</svg>

@@ -7,7 +7,8 @@ No auth token required.
 """
 
 import json
-from datetime import date, timedelta, datetime
+import re
+from datetime import date, timedelta, datetime, timezone
 from pathlib import Path
 
 import requests
@@ -29,18 +30,48 @@ def fetch_contributions_html(username: str) -> str:
 
 def parse_contribution_days(html: str) -> list[dict]:
     soup = BeautifulSoup(html, "html.parser")
-    rects = soup.select("rect.ContributionCalendar-day")
+
+    # GitHub now uses <td class="ContributionCalendar-day"> with data-level (0-4)
+    # and a <tool-tip> sibling whose text contains the count.
+    # We also try the older <rect> form as a fallback.
+    cells = soup.select("td.ContributionCalendar-day")
+    if not cells:
+        cells = soup.select("rect.ContributionCalendar-day")
+
     raw = []
-    for rect in rects:
-        iso_date = rect.get("data-date")
-        count_str = rect.get("data-count", "0")
+    for cell in cells:
+        iso_date = cell.get("data-date")
         if not iso_date:
             continue
-        try:
-            count_int = int(count_str)
-        except ValueError:
-            count_int = 0
+
+        # Try data-count first (old format), then parse the tooltip text
+        count_str = cell.get("data-count")
+        if count_str is not None:
+            try:
+                count_int = int(count_str)
+            except ValueError:
+                count_int = 0
+        else:
+            # New format: find the associated <tool-tip> by id
+            cell_id = cell.get("id", "")
+            tooltip_text = ""
+            if cell_id:
+                # tool-tip has for="<cell_id>"
+                tip = soup.find("tool-tip", attrs={"for": cell_id})
+                if tip:
+                    tooltip_text = tip.get_text()
+            # tooltip text is like "3 contributions on October 23, 2026"
+            # or "No contributions on ..."
+            m = re.match(r"(\d+)\s+contribution", tooltip_text)
+            if m:
+                count_int = int(m.group(1))
+            else:
+                # Fall back to data-level as a proxy (level 0=0, 1=1..4 contributions avg)
+                level = int(cell.get("data-level", 0))
+                count_int = level  # non-zero means active; we use level as-is
+
         raw.append({"date": iso_date, "count": count_int})
+
     # deduplicate, keep latest
     unique: dict[str, dict] = {}
     for day in raw:
@@ -94,7 +125,7 @@ def main() -> None:
 
     payload = {
         "username": USERNAME,
-        "generated_at": datetime.utcnow().isoformat() + "Z",
+        "generated_at": datetime.now(timezone.utc).isoformat(),
         "total": total,
         "days": days,
         "stats": {
