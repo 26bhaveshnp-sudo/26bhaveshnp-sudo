@@ -12,11 +12,11 @@ Set env var STATIC=1 to emit a frozen frame for local Quick Look previews.
 import os
 from pathlib import Path
 
-from PIL import Image, ImageOps
+from PIL import Image, ImageOps, ImageEnhance
 
 ROOT = Path(__file__).resolve().parents[1]
 SRC  = ROOT / "source-prepped.png"
-OUT  = ROOT / "avi-ascii.svg"
+OUT  = ROOT / "bhavesh-ascii.svg"
 
 # Density ramp: space = brightest/empty, @ = darkest/dense
 RAMP = " .`:-=+*cs#%@"
@@ -33,7 +33,9 @@ def main() -> None:
         )
 
     img = Image.open(SRC).convert("L")
-    img = ImageOps.autocontrast(img)
+    enhancer = ImageEnhance.Contrast(img)
+    img = enhancer.enhance(1.4)
+    img = ImageOps.autocontrast(img, cutoff=2)
 
     # Monospace characters are roughly 0.5× as wide as they are tall,
     # so shrink the target height by ~0.5 to avoid vertical stretching.
@@ -45,9 +47,12 @@ def main() -> None:
         row: list[str] = []
         for x in range(img.width):
             value = img.getpixel((x, y))
-            idx = int((255 - value) / 256 * len(RAMP))
-            idx = max(0, min(len(RAMP) - 1, idx))
-            row.append(RAMP[idx])
+            if value >= 248:
+                row.append(" ")
+            else:
+                idx = int((255 - value) / 256 * len(RAMP))
+                idx = max(0, min(len(RAMP) - 1, idx))
+                row.append(RAMP[idx])
         lines.append("".join(row))
 
     FONT_W  = 6   # px per glyph at font-size 8px

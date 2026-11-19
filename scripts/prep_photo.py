@@ -3,7 +3,7 @@
 prep_photo.py  <path/to/source.jpg>
 
 Prepares a face photo for ASCII conversion:
-  1. Removes the background (rembg / U2Net)
+  1. Removes the background (rembg / u2netp)
   2. Boosts local contrast with CLAHE
   3. Composites onto pure white so the background maps to spaces
 
@@ -16,7 +16,7 @@ from pathlib import Path
 import cv2
 import numpy as np
 from PIL import Image
-from rembg import remove
+from rembg import new_session, remove
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -25,8 +25,18 @@ def prep_image(src_path: str) -> None:
     print(f"Loading  {src_path} ...")
     img = Image.open(src_path).convert("RGBA")
 
-    print("Removing background ...")
-    no_bg = remove(img)
+    # Resize to max 1200px for robust, fast segmentation
+    w, h = img.size
+    max_dim = 1200
+    if max(w, h) > max_dim:
+        scale = max_dim / max(w, h)
+        img_proc = img.resize((int(w * scale), int(h * scale)), Image.Resampling.LANCZOS)
+    else:
+        img_proc = img
+
+    print("Removing background with u2netp ...")
+    session = new_session("u2netp")
+    no_bg = remove(img_proc, session=session)
 
     # Convert to numpy for OpenCV processing
     rgb = no_bg.convert("RGB")
@@ -39,7 +49,7 @@ def prep_image(src_path: str) -> None:
 
     # White background where alpha == 0 (was background)
     alpha = np.array(no_bg.getchannel("A"))
-    mask = alpha > 0
+    mask = alpha > 15
     white = np.full(gray.shape, 255, dtype=np.uint8)
     result = np.where(mask, gray, white)
 

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="612" height="496" viewBox="0 0 612 496">
+
+  <style>
+    text {
+      font-family: "SFMono-Regular", Consolas, Menlo, monospace;
+      font-size: 8px;
+      letter-spacing: 0.15px;
+      fill: #c9d9f0;
+    }
+    .ln { opacity: 0; animation: wipe 0.18s ease-out forwards; }
+    @keyframes wipe {
+      from { opacity: 0; clip-path: inset(0 100% 0 0); }
+      to   { opacity: 1; clip-path: inset(0 0% 0 0); }
+    }
+  </style>
+  <rect width="612" height="496" fill="#0d1117" rx="12"/>
+  <text class="ln" x="18" y="18" style="animation-delay:0ms;">                                                                                                </text>
+  <text class="ln" x="18" y="28" style="animation-delay:28ms;">                                                                                                </text>
+  <text class="ln" x="18" y="38" style="animation-delay:56ms;">                                                                                                </text>
+  <text class="ln" x="18" y="48" style="animation-delay:84ms;">                                                                                                </text>
+  <text class="ln" x="18" y="58" style="animation-delay:112ms;">                                                                                                </text>
+  <text class="ln" x="18" y="68" style="animation-delay:140ms;">                                                                                                </text>
+  <text class="ln" x="18" y="78" style="animation-delay:168ms;">                                                                                                </text>
+  <text class="ln" x="18" y="88" style="animation-delay:196ms;">                                                                                                </text>
+  <text class="ln" x="18" y="98" style="animation-delay:224ms;">                                                                                                </text>
+  <text class="ln" x="18" y="108" style="animation-delay:252ms;">                               .`::::`.                                                         </text>
+  <text class="ln" x="18" y="118" style="animation-delay:280ms;">                          .=*s#%%%%%%%%%#s#sc=+*.                                               </text>
+  <text class="ln" x="18" y="128" style="animation-delay:308ms;">                        :+ssccsscc#%@@@@@@@@@@@@:                                               </text>
+  <text class="ln" x="18" y="138" style="animation-delay:336ms;">                      .+c**c#%%@@@@@%##%%%%@@@@%#.                                              </text>
+  <text class="ln" x="18" y="148" style="animation-delay:364ms;">                      +scc%@@@@@#c+=:`::-=+*s@@@c                                               </text>
+  <text class="ln" x="18" y="158" style="animation-delay:392ms;">                     .s%%@@@@@@*--:`....``::-s@@-                                               </text>
+  <text class="ln" x="18" y="168" style="animation-delay:420ms;">                     `%@@@@@@@c:`       ... .:c@s                                               </text>
+  <text class="ln" x="18" y="178" style="animation-delay:448ms;">                      %@@@@@s=```-=*cc*+--=++-:sc.                                              </text>
+  <text class="ln" x="18" y="188" style="animation-delay:476ms;">                      #@@@%s+-c*#@@@@@@#: =s%@#+-=+                                             </text>
+  <text class="ln" x="18" y="198" style="animation-delay:504ms;">                     *%ss#@s=-===**cc*+-`  =%@@cc@*                                             </text>
+  <text class="ln" x="18" y="208" style="animation-delay:532ms;">                    .%*s#+s*=:..      ::`:``:--=@%`                                             </text>
+  <text class="ln" x="18" y="218" style="animation-delay:560ms;">                     *cs#++*cc*-:`.```*#@@@c. .+:                                               </text>
+  <text class="ln" x="18" y="228" style="animation-delay:588ms;">                     `*=+c+++++***s#s++##%%*--+=                                                </text>
+  <text class="ln" x="18" y="238" style="animation-delay:616ms;">                       --*s+=--=*c#%scc++++*%c*`                                                </text>
+  <text class="ln" x="18" y="248" style="animation-delay:644ms;">                         sc**+==cssc**cs#ss+**+                                                 </text>
+  <text class="ln" x="18" y="258" style="animation-delay:672ms;">                       :%@+=#%sc**+-------::-+`                                                 </text>
+  <text class="ln" x="18" y="268" style="animation-delay:700ms;">                      -@@@c:+%@@@%#sccss##c+s-                                                  </text>
+  <text class="ln" x="18" y="278" style="animation-delay:728ms;">                   `-*@@@@#-:-+csss#@@@%##*@@%-                                                 </text>
+  <text class="ln" x="18" y="288" style="animation-delay:756ms;">              .`-c%@@@@@@@@c--:---:--:-::`=@@@@=:..                                             </text>
+  <text class="ln" x="18" y="298" style="animation-delay:784ms;">         .`-*ssss#%@@@@@@@@@c---=====-:`.:%@@@@s#sc*+-`.                                        </text>
+  <text class="ln" x="18" y="308" style="animation-delay:812ms;">     .`=**cs%%%#s##%@@@@@@@@@c=-==--=+-:-#@@@@%#s##s#csc*++++-`                                 </text>
+  <text class="ln" x="18" y="318" style="animation-delay:840ms;">  .--=c#sc**s#ss###s%@@@@@@@@@s++*c*++==%@@@@@##cs%ccssscccccs#*.                               </text>
+  <text class="ln" x="18" y="328" style="animation-delay:868ms;"> .*s%c+++====s#ccss##@%@@@@%%##c*+=*ss+*%c%@%%#sc#%scssscc##s+++c:                              </text>
+  <text class="ln" x="18" y="338" style="animation-delay:896ms;"> -*+s%@#sscc*cs##%####%%@%%%##%@%s+::-```+#%#*+c*s#s#%#ss%@%s*=*ss+`                            </text>
+  <text class="ln" x="18" y="348" style="animation-delay:924ms;">c+c*++*#@@%#s*ccss#%@#@##ss%@@@@@@@#+.  +@@@@@ssss#s#%ss%@%%scc##*+*-.                          </text>
+  <text class="ln" x="18" y="358" style="animation-delay:952ms;">*+**ccc*s%@@@#sccccs@@@%#%@@@@@@@@@@@#:`#@@@@@@#*cs##ss%@###%%@@scc+++=.                        </text>
+  <text class="ln" x="18" y="368" style="animation-delay:980ms;">+s#%#s##s%@@@@s*ssccc#@@@@@@@@@@@@@@@@%s@@@@@@@@#s##s#%@%%@@@@@%#%sc+++c=                       </text>
+  <text class="ln" x="18" y="378" style="animation-delay:1008ms;">ccs%@@%@%s%@@%%ss#%#scs%@@@@@@@@@@@@@@@%@@@@@@@%css##%%###%%%@@@%#s#ss**c:                      </text>
+  <text class="ln" x="18" y="388" style="animation-delay:1036ms;">ccccs###sc#@@@@%#%s#%%%##%@@@@@@@@@@@%%%#@@@@@%ccs#%@@%%@@@@%@@%%@@%%sccs=`.                    </text>
+  <text class="ln" x="18" y="398" style="animation-delay:1064ms;">#s%%%##ss###@@%#ssccccs%#s#%@@@@@@@@@@@@%@@@@%##%%%@@%######@@@@@%##%%#sscsc:                   </text>
+  <text class="ln" x="18" y="408" style="animation-delay:1092ms;">%cc#@@@%#@@@@@@@###s##+:*sccs#%%%@@@%s%@s@@#s#ss##%s=+s##%sc%@@%%%#%@%s%@%s*+-                  </text>
+  <text class="ln" x="18" y="418" style="animation-delay:1120ms;">#c*+*s%@@#%@@@@@@@@%%#c:+###%%%%#@@@c*s%s#%c*css#%%c:-s##%@@@@@%@@@%##@@#sc*+*=`                </text>
+  <text class="ln" x="18" y="428" style="animation-delay:1148ms;">##s*+**s%@@%@@@@@@@@@@@%%#%%#ss%%%%%%%%%sc%@@@@@%%%%@%%@@@@@@@@@@@%%#@%sssc*****=`              </text>
+  <text class="ln" x="18" y="438" style="animation-delay:1176ms;">+*c**+=++cs#%@@@@@@@@@%##ss##scss%%ss##%#s#%###%#%@@@@@@@@%%@@@@@@@%@%sssccccsc***=`            </text>
+  <text class="ln" x="18" y="448" style="animation-delay:1204ms;">=+ccc*++*cs%@@@@@@@@@@@@%#####c##@%##%@@@#s####%%%%@@@@@@@@%=#@@@@%%##@@@ss#%%%sc***+`          </text>
+  <text class="ln" x="18" y="458" style="animation-delay:1232ms;">%@@%#scccc#@@@@@@@@@@@@@@@@@@@#@#@@@@@@@@%@%@@@@@@@@@@@@@@@%. c@@@@@@@@@@#%%#scccsccc#-         </text>
+  <text class="ln" x="18" y="468" style="animation-delay:1260ms;">s*++cs#@@@%%@@@@@@@@@@@@@@@@@@@@%@@@@@@@@@@@@@@@@@@@@@@@@@@#.  :s@@@@@@@@#cccs#%@%%%%%@s:       </text>
+</svg>

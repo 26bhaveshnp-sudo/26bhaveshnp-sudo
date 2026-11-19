@@ -3,3 +3,5 @@ __pycache__/
 *.pyc
 source-prepped.png
 source-photo.jpg
+source-photo.png
+preview.html
